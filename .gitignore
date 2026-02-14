@@ -1,0 +1,20 @@
+# Binary
+gofetch-audio
+dist/
+
+# Audio files
+*.mp3
+*.m4a
+*.opus
+*.wav
+*.webm
+*.txt
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
