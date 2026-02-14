@@ -12,8 +12,32 @@ A fast CLI tool to download audio from YouTube videos, built with Go and [Bubble
 
 ## Requirements
 
-- [yt-dlp](https://github.com/yt-dlp/yt-dlp): `pipx install yt-dlp`
-- [ffmpeg](https://ffmpeg.org/): `apt install ffmpeg`
+### Linux / macOS
+
+```bash
+# yt-dlp
+pipx install yt-dlp
+
+# ffmpeg
+apt install ffmpeg      # Debian/Ubuntu
+brew install ffmpeg     # macOS
+```
+
+### Windows
+
+```powershell
+# Using winget
+winget install yt-dlp
+winget install ffmpeg
+
+# Or using scoop
+scoop install yt-dlp ffmpeg
+
+# Or using chocolatey
+choco install yt-dlp ffmpeg
+```
+
+> **Note:** Use [Windows Terminal](https://github.com/microsoft/terminal) for best experience with colors and emojis.
 
 ## Installation
 
@@ -24,6 +48,13 @@ make build
 ```
 
 Binary will be in `dist/gofetch-audio`.
+
+### Cross-platform builds
+
+```bash
+make build-all
+# Creates binaries for Linux, macOS (Intel/ARM), and Windows
+```
 
 ## Usage
 
